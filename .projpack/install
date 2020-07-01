@@ -1,5 +1,5 @@
 #!/bin/sh
 make build/libpngdraw.so
 mkdir ../../include/pngdraw
-cp src/*,h ../../include/pngdraw
+cp src/*.h ../../include/pngdraw
 cp build/libpngdraw.so ../../lib
