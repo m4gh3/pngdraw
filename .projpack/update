@@ -1,0 +1,5 @@
+#!/bin/sh
+git pull
+make build/libpngdraw.so
+cp src/*.h ../../include/pngdraw
+cp build/libpngdraw.so ../../lib
