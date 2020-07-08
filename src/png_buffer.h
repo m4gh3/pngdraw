@@ -13,7 +13,15 @@ typedef struct
 	int pixel_size, width, height, depth;
 } png_buffer_ut;
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 int png_buffer_init(png_buffer_ut *png_buf );
 int write_png_buf(char *filename, png_buffer_ut *png_buf );
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
